@@ -3,12 +3,12 @@
 namespace App\Models;
 
 use Database\Factories\UserFactory;
+use Devdojo\Accounts\Traits\HasProfileKeyValues;
 use Devdojo\Auth\Models\User as AuthUser;
 use Devdojo\Billing\Traits\HasPlanFeatures;
 use Devdojo\Billing\Traits\HasSubscriptions;
 use Devdojo\Changelog\Traits\HasChangelogs;
 use Devdojo\Notifications\Traits\HasNotificationPreferences;
-use Devdojo\Profiles\Traits\HasProfileKeyValues;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Str;
